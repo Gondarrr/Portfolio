@@ -1,6 +1,4 @@
-import { useState, useRef } from "react";
-import { useClickAway } from "react-use";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -13,13 +11,6 @@ const staggerContainer = {
 };
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
-
-  useClickAway(menuRef, () => {
-    setIsOpen(false);
-  });
-
   return (
     <motion.nav
       className="navbar"
@@ -62,41 +53,6 @@ export const Navbar = () => {
           <a href="#contact">Contact</a>
         </motion.li>
       </motion.ul>
-
-      {/* Hamburger Button */}
-      <button
-        className={`hamburger ${isOpen ? "active" : ""}`}
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      {/* Menu Links - Mobile (muncul saat hamburger diklik) */}
-      <AnimatePresence>
-        {isOpen && (
-          <motion.ul
-            ref={menuRef}
-            className="navbar-links mobile"
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.3 }}
-          >
-            <li onClick={() => setIsOpen(false)}>
-              <a href="#home">Home</a>
-            </li>
-            <li onClick={() => setIsOpen(false)}>
-              <a href="#projects">Projects</a>
-            </li>
-            <li onClick={() => setIsOpen(false)}>
-              <a href="#contact">Contact</a>
-            </li>
-          </motion.ul>
-        )}
-      </AnimatePresence>
     </motion.nav>
   );
 };

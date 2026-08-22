@@ -35,24 +35,35 @@ export const Projects = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.div
+        <motion.a
+          href="https://deskripsi-ai-khaki.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
           className="project-card"
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/commingsoon.png')" }}
+            style={{ backgroundImage: "url('/projects/deskripsi-ai.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3>Coming soon</h3>
-          <p>Coming soon</p>
+          <h3>DeskripsiAI</h3>
+          <p>
+            AI product description generator untuk penjual online. Isi detail
+            produk, pilih tone, dan dapatkan deskripsi siap pakai untuk
+            marketplace seperti Shopee dan Tokopedia.
+          </p>
           <div className="project-tech">
             <span>Next.js</span>
-            <span>OpenAI</span>
+            <span>Gemini API</span>
             <span>TailwindCSS</span>
+            <span>FramerMotion</span>
+            <span>TypeScript</span>
+            <span>Prompt Engineering</span>
+            <span>AI API Integration</span>
           </div>
-        </motion.div>
+        </motion.a>
 
         <motion.div
           className="project-card"
