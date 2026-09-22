@@ -448,6 +448,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-card::before {
