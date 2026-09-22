@@ -42,6 +42,25 @@ export const Projects = () => {
         >
           <motion.div
             className="project-image"
+            style={{ backgroundImage: "url('/projects/comingsoon.png')" }}
+            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          />
+          <h3>Coming soon</h3>
+          <p>Coming soon</p>
+          <div className="project-tech">
+            <span>Next.js</span>
+            <span>OpenAI</span>
+            <span>TailwindCSS</span>
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="project-card"
+          variants={fadeInUp}
+          whileHover={{ y: -10, transition: { duration: 0.2 } }}
+        >
+          <motion.div
+            className="project-image"
             style={{ backgroundImage: "url('/projects/dashboard.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
@@ -59,25 +78,6 @@ export const Projects = () => {
             <span>TailwindCSS</span>
             <span>PostgresSQL</span>
             <span>PWA</span>
-          </div>
-        </motion.div>
-
-        <motion.div
-          className="project-card"
-          variants={fadeInUp}
-          whileHover={{ y: -10, transition: { duration: 0.2 } }}
-        >
-          <motion.div
-            className="project-image"
-            style={{ backgroundImage: "url('/projects/comingsoon.png')" }}
-            whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
-          />
-          <h3>Coming soon</h3>
-          <p>Coming soon</p>
-          <div className="project-tech">
-            <span>Next.js</span>
-            <span>OpenAI</span>
-            <span>TailwindCSS</span>
           </div>
         </motion.div>
 
