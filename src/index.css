@@ -52,7 +52,7 @@ body {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-color) trasparent;
+  scrollbar-color: var(--primary-color) transparent;
 }
 
 /* Selection Color */

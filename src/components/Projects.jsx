@@ -35,35 +35,32 @@ export const Projects = () => {
         whileInView="animate"
         viewport={{ once: true }}
       >
-        <motion.a
-          href="https://deskripsi-ai-khaki.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
+        <motion.div
           className="project-card"
           variants={fadeInUp}
           whileHover={{ y: -10, transition: { duration: 0.2 } }}
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/deskripsi-ai.png')" }}
+            style={{ backgroundImage: "url('/projects/dashboard.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
-          <h3>DeskripsiAI</h3>
+          <h3>Cashier App</h3>
           <p>
-            AI product description generator untuk penjual online. Isi detail
-            produk, pilih tone, dan dapatkan deskripsi siap pakai untuk
-            marketplace seperti Shopee dan Tokopedia.
+            Sistem kasir dan simpan pinjam untuk koperasi kantor. Transaksi
+            dengan barcode, stok terpotong otomatis, pinjaman anggota beserta
+            angsurannya, dan dashboard pemantauan untuk pengurus. Bisa dipasang
+            di PC maupun HP.
           </p>
           <div className="project-tech">
             <span>Next.js</span>
-            <span>Gemini API</span>
-            <span>TailwindCSS</span>
-            <span>FramerMotion</span>
             <span>TypeScript</span>
-            <span>Prompt Engineering</span>
-            <span>AI API Integration</span>
+            <span>Supabase</span>
+            <span>TailwindCSS</span>
+            <span>PostgresSQL</span>
+            <span>PWA</span>
           </div>
-        </motion.a>
+        </motion.div>
 
         <motion.div
           className="project-card"
@@ -72,7 +69,7 @@ export const Projects = () => {
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/commingsoon.png')" }}
+            style={{ backgroundImage: "url('/projects/comingsoon.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
           <h3>Coming soon</h3>
@@ -91,7 +88,7 @@ export const Projects = () => {
         >
           <motion.div
             className="project-image"
-            style={{ backgroundImage: "url('/projects/commingsoon.png')" }}
+            style={{ backgroundImage: "url('/projects/comingsoon.png')" }}
             whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
           />
           <h3>Coming soon</h3>

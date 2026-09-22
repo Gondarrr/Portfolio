@@ -91,7 +91,7 @@ export const Contact = () => {
       <motion.h2
         variants={fadeInUp}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
         viewport={{ once: true }}
       >
         Get in touch
@@ -101,7 +101,7 @@ export const Contact = () => {
         className="contact-content"
         variants={staggerContainer}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
       >
         <motion.form className="contact-form" onSubmit={handleSubmit}>
           <motion.input

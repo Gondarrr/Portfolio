@@ -71,14 +71,24 @@ export const Hero = () => {
             </motion.a>
           </motion.div>
 
-          <motion.div className="social-links" variants={staggerContainer}>
-            <motion.a href="https://github.com/Gondarrr/Portfilio.git">
+          <motion.div
+            className="social-links"
+            variants={staggerContainer}
+            aria-label="GitHub"
+          >
+            <motion.a href="https://github.com/Gondarrr/Portfolio.git">
               <FontAwesomeIcon icon={faGithub} />
             </motion.a>
-            <motion.a href="https://www.linkedin.com/in/yuflih-agil-0781592a1/">
+            <motion.a
+              href="https://www.linkedin.com/in/yuflih-agil-0781592a1/"
+              aria-label="LinkedIn"
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </motion.a>
-            <motion.a href="https://www.instagram.com/yagildp">
+            <motion.a
+              href="https://www.instagram.com/yagildp"
+              aria-label="Instagram"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </motion.a>
           </motion.div>
